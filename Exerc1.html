@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    <p>Faça um programa que solicite  dois números inteiros e exiba a soma, subtração, multiplicação e divisão entre eles.</p>
+
+    <script>
+        let num1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+        let num2 = parseInt(prompt("Digite o segundo número inteiro:"));
+
+        document.write("Os números digitados foram: " + num1 + " e " + num2 + "<br>");
+
+        //Cálculos
+        let soma = num1 + num2;
+        let subtracao = num1 - num2;
+        let multiplicacao = num1 * num2;
+        let divisao = num1 / num2;
+
+        //Exibição dos resultados
+        document.write("A soma é: " + soma + "<br>");
+        document.write("A subtração é: " + subtracao + "<br>");
+        document.write("A multiplicação é: " + multiplicacao + "<br>");
+        document.write("A divisão é: " + divisao + "<br>");
+    </script>
+</body>
+</html>

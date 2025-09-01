@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <h1>Exercício 2</h1>
+    <p>Escreva um programa que leia o raio de um círculo e calcule sua área.</p>
+
+    <script>
+        let raio = parseFloat(prompt("Digite o raio do círculo:"));
+        let pi = 3.14;
+        let area = pi * Math.pow(raio, 2); //Math.pow = potência
+
+        document.write("O raio digitado foi: " + raio + "<br>");
+        document.write("A área do círculo é: " + area + "<br>");
+    </script>
+</body>
+</html>
