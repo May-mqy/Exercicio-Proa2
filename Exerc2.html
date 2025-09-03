@@ -7,15 +7,17 @@
 </head>
 <body>
     <h1>Exercício 2</h1>
-    <p>Escreva um programa que leia o raio de um círculo e calcule sua área.</p>
+    <p>Escreva um programa que leia o raio de um círculo e calcule sua área e perímetro.</p>
 
     <script>
         let raio = parseFloat(prompt("Digite o raio do círculo:"));
         let pi = 3.14;
-        let area = pi * Math.pow(raio, 2); //Math.pow = potência
+        let area = pi * (raio ** 2); //Math.pow = potência ou usar ** para potência
+        let perimetro = 2 * pi * raio;
 
         document.write("O raio digitado foi: " + raio + "<br>");
-        document.write("A área do círculo é: " + area + "<br>");
+        document.write("A área do círculo é: " + area.toFixed(2) + "<br>");
+        document.write("O perímetro do círculo é: " + perimetro.toFixed(2) + "<br>");  //usar o .toFixed serve para limitar a casas decimais.
     </script>
 </body>
 </html>

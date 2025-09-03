@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    <h1>Exercício 8</h1>
+    <p>Escreva um programa que leia dois números inteiros e troque os seus valores, ou seja, o primeiro deve ficar com o valor do segundo e vice-versa.</p>
+
+    <script>
+        let num1 = parseInt(prompt("Digite o primeiro número:"))
+        let num2 = parseInt(prompt("Digite o segundo número:")) 
+        let x = 0 // Reserva
+
+        document.write("Antes da troca os valores são: " + "<br>" + "<br>" + "Número 1 = " + num1 + "<br>" + "Número 2 = " + num2 + "<br>" + "<br>");
+
+        x = num1;  //X guarda o valor de numero 1
+        num1 = num2;
+        num2 = x;
+
+        document.write("Depois da troca os valores são: " + "<br>" + "<br>" + "Número 1 = " + num1 + "<br>" + "Número 2 = " + num2);
+    </script>
+</body>
+</html>

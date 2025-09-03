@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <h1>Exercício 10 - Tabuada</h1>
+    <p>Faça um programa que leia um número inteiro e exiba a sua tabuada de multiplicação até o décimo valor.</p>
+
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro: "))
+
+        for (let i = 1; i <= 10; i++) { // Loop de 1 a 10 - let i = começa em um pois i é o multiplicador que vai até 10, i++ i + 1, ou seja, roda o loop, i + 1 = 2 e por aí vai.
+            document.write(numero + " x " + i + " = " + (numero * i) + "<br>") 
+        }
+    </script>
+</body>
+</html>
