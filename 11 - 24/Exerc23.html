@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 23</title>
+</head>
+<body>
+    <h1>Exercício 23</h1>
+    <p>Escreva um programa que leia o nome de um mês e exiba a quantidade de dias que ele possui. Considere apenas meses válidos.</p>
+
+    <script>
+        let mes = prompt("Digite um mês para saber a quantidade de dias que ele possui: ")
+        mes = mes.toLowerCase() //para letras Maiúsculas serem validas tbm
+
+        if (mes === "janeiro" || mes === "março" || mes === "maio" ||mes === "julho" ||mes === "agosto" ||mes ==="outubro"|| mes === "dezembro"){
+            document.write( mes + " Possui 31 dias")}
+
+        else if (mes === "abril" ||mes === "junho"|| mes === "setembro"|| mes === "novembro"){
+            document.write( mes + " Possui 30 dias")
+        }
+
+        else if (mes === "fevereiro"){
+            document.write ( mes + " Possui 28 dias e em anos bissextos possui 29 dias")
+        }
+
+        else {
+            document.write( "Digite um mês válido!")
+        }
+    </script>
+</body>
+</html>
