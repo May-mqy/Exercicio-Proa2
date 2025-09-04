@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 35</title>
+</head>
+<body>
+    <h1>Exercício 35</h1>
+    <p> Escreva um programa que leia três números inteiros e exiba a média aritmética. Se a média for maior ou igual a 7, exiba a mensagem "Aprovado", caso contrário, exiba a mensagem "Reprovado".</p>
+
+    <script>
+        let nota1 = parseInt(prompt("Digite a primeira nota: "))
+        let nota2 = parseInt(prompt("Digite a segunda nota: "))
+        let nota3 = parseInt(prompt ("Digite a terceira nota: "))
+
+        let media = (nota1 + nota2 + nota3)/3
+        document.write("A média da sua nota é: " + media.toFixed(2) + "<br>")
+
+        if (media >= 7){
+            document.write("Você foi Aprovado!")
+        }
+        else {
+            document.write("Você foi Reprovado.")
+        }
+
+    </script>
+
+</body>
+</html
