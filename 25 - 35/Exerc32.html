@@ -10,7 +10,17 @@
     <p>Escreva um programa que leia a nota de um aluno em uma prova e exiba a sua conceituação conforme a tabela de notas.</p>
 
     <script>
-        
+        let nota = parseFloat(prompt("Informe sua nota: "))
+
+        if (nota >= 9){
+            document.write("Sua nota é Excelente!! Parabéns")
+        }
+        else if(nota < 9 && nota >6){
+            document.write("Sua nota é boa!")
+        }
+        else{
+            document.write("Sua nota não é tão boa! Melhore na próxima prova!")
+        }
     </script>
 </body>
 </html>

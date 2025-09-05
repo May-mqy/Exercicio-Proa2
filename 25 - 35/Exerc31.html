@@ -10,7 +10,11 @@
     <p>Faça um programa que leia o valor do salário-mínimo e o salário de um funcionário, e exiba quantos salários-mínimos ele recebe.</p>
 
     <script>
-        
+        let salarioMin = 1.518;
+        let salarioFun = parseFloat(prompt("Informe o valor do salário do funcionário: "))
+
+        let salario =  salarioFun / salarioMin
+        document.write("O salário do funcionário equivale a: " + salario.toFixed(2) + " salários-mínimos")
     </script>
 </body>
 </html>
