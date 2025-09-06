@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 26</title>
+</head>
+<body>
+    <h1>Exercício 26</h1>
+    <p> Escreva um programa que leia o código de um produto e a quantidade comprada, e exiba o valor total a ser pago. Considere que cada produto tem um preço diferente.</p>
+
+    <script>
+        
+        // Tabela de produtos (código -> preço)
+        let produtos = {
+            1: 5.00,   // Produto 1 custa R$ 5,00
+            2: 3.50,   // Produto 2 custa R$ 3,50
+            3: 7.20,   // Produto 3 custa R$ 7,20
+            4: 10.00   // Produto 4 custa R$ 10,00
+        };
+        
+        let codigo = prompt("Informe o código do produto (1 a 4): ") // Informar em código
+        let quantidade = parseInt(prompt("Digite a quantidade: "))
+        
+        // produtos[codigo] pega o preço correspondente ao código digitado.
+        if (produtos[codigo] !== undefined) { //Undefind Aparece quando você tenta acessar algo que não existe ao usuário.
+        let preco = produtos[codigo];
+        let total = preco * quantidade;
+
+        document.write("<h3>Resumo da compra:</h3>");
+        document.write("Código do produto: " + codigo + "<br>");
+        document.write("Preço unitário: R$ " + preco.toFixed(2) + "<br>");
+        document.write("Quantidade: " + quantidade + "<br>");
+        document.write("<b>Total a pagar: R$ " + total.toFixed(2) + "</b>");
+        } 
+
+        else {
+        document.write("Código inválido! Digite um código entre 1 e 4.");
+        }
+
+    </script>
+</body>
+</html>
