@@ -14,9 +14,12 @@
         let B = parseInt(prompt("Informe o segundo número"))
         let C = parseInt(prompt("Informe o terceiro número:"))
 
-        if (A > B && A > C && B > C){
-            ???
-        }
+        let nums = [A, B, C] //nums é um vetor que armazena os números digitados pelo usuário
+        nums.sort(function(a,b){
+            return b-a
+        })
+
+        document.write("Os números organizados em ordem decrescente: "  + nums)
     </script>
 </body>
 </html>
