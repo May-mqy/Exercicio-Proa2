@@ -10,7 +10,26 @@
     <p>Faça um programa que leia 20 números e, ao final, escreva quantos estão entre 0 e 100, quantos estão entre 101 e 200 e quantos são maiores de 200.</p>
 
     <script>
+        let idades = new Array (20)
+        let maior = 0
+        let maior2=0
+        let maior3=0
         
+        for(let i=0; i<20;i++){
+            idades[i]=parseInt(prompt("Digite a " + (i+1) + "º idade: "))
+            if(idades[i]>=0 && idades[i]<101){
+                maior ++
+            }
+            else if(idades[i]>=101 && idades[i]<200){
+                maior2++
+            }
+            else {
+                maior3 ++
+            }
+        }
+
+        document.write(maior + " Números são entre 0 e 100" + "<br>" + maior2 + " Números estão entre 101 e 200" + "<br>" + maior3 + " Números são maiores de 200"
+        )
     </script>
 </body>
 </html>

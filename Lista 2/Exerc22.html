@@ -10,7 +10,17 @@
     <p>Faça um programa que leia 20 números e, ao final, escreva quantos estão entre 0 e 100. </p>
 
     <script>
+        let idades = new Array (20)
+        let contador = 0
         
+        for(let i=0; i<20;i++){
+            idades[i]=parseInt(prompt("Digite a " + (i+1) + "º idade: "))
+            if(idades[i]>=0 && idades[i]<101){
+                contador ++
+            }
+        }
+
+        document.write(contador + " Números estão entre 0 e 100"  )
     </script>
 </body>
 </html>

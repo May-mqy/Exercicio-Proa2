@@ -7,10 +7,25 @@
 </head>
 <body>
     <h1>Exercício 25</h1>
+    <!--Exercício igual ao 24-->
     <p>Escreva um programa que leia uma sequência de números do usuário e realize e a soma desses números. Encerre a execução quando um número negativo for digitado.</p>
 
     <script>
+        let soma = 0
+        let numero
+
+        do { // Faça 
+            numero = parseInt(prompt("Digite um número (digite um número negativo para encerrar): "))
         
+        if (numero >= 0) { // se o número maior ou igual a 0 some
+            soma += numero
+        }
+
+        } while (numero >= 0) //Enquanto
+
+        document.write("A soma dos números digitados é: " + soma)
+
+    </script>
     </script>
 </body>
 </html>
