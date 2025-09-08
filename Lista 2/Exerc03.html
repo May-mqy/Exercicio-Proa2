@@ -10,7 +10,31 @@
     <p>A CEF concederá um crédito especial com juros de 2% aos seus clientes de acordo com o saldo médio no último ano. Fazer um programa em JAVA que leia o saldo médio de um cliente e calcule o valor do crédito de acordo com a tabela a seguir. Imprimir uma mensagem informando o saldo médio e o valor de crédito.</p>
     
     <script>
-        ???
-    </script>
+        let saldo = parseInt(prompt("Informe seu crédito: "))
+        let porcentagem = 0
+        let total = 0
+
+
+        if (saldo < 0){
+            alert("Valor inválido! Informe um ")
+        }
+        else if( saldo >= 0 && saldo <= 500){
+            document.write("Nenhum crédito adicional" + "<br>")
+        }
+        else if( saldo >= 501 && saldo <= 1000){
+            porcentagem = 30
+            total = saldo * 1.3
+        }
+        else if (saldo >= 1001 && saldo <= 3000){
+            porcentagem = 40
+            total = saldo * 1.4
+        }
+        else {
+            porcentagem = 50
+            total = saldo * 1.5
+        }
+        
+        document.write("Você tem direito " + porcentagem + "%! Seu antigo saldo: " + saldo + " E seu novo saldo: " +total.toFixed(0))
+        </script>
 </body>
 </html>

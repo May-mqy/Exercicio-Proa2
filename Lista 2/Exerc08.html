@@ -15,10 +15,27 @@
     </ul>
     <p>O programa deve calcular o valor total a ser pago e apresentar o resultado. <br>
     Cálculo : (valor1*quant1 + valor2*quant2)*(IPI/100 + 1)
+
 </p>
 
 <script>
+    let porcentagem = parseInt(prompt("Informe a porcentagem do IPI a ser acrescido no valor das peças: "))
+    let peca1 = prompt("Informe o código da peça 1")
+    let valor1 = parseFloat(prompt("Informe o valor da peça 1 "))
+    let quantidade1 = parseInt(prompt("Informe a quantidade comprada da peça 1: "))
     
+    let peca2 = prompt("Informe o código da peça 2")
+    let valor2 = parseFloat(prompt("Informe o valor da peça 2 "))
+    let quantidade2 = parseInt(prompt("Informe a quantidade comprada da peça 2: "))
+
+    let Calculo = (valor1*quantidade1 + valor2*quantidade2) * (porcentagem/100 + 1)
+
+    document.write("O IPI a ser acrecido é igual a: " + porcentagem + "%")
+    document.write("<br>"+"O código da peça 1: " + peca1 + " que custa R$" + valor1 + ", e você comprou " + quantidade1 + "<br>")
+    document.write("O código da peça 2: " + peca2 + " que custa R$" + valor2 + ", e você comprou " + quantidade2)
+    document.write("<br>" + "O valor total a ser pago é: " + Calculo)
+
+
 </script>
 </body>
 </html>

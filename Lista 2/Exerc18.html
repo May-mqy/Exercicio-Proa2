@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+</head>
+<body>
+    <h1>Exercício 18</h1>
+    <p>Escreva um programa que leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova. </p>
+
+    <script>
+        let idade = new Array (10)
+        let nomes = new Array (10)
+
+        // Pede os dados da primeira pessoa para poder comparar c a segunda pessoa depois (aula prof Andreia salvouu)
+    nomes[0] = prompt("Informe o 1º nome: ")
+    idade[0] = parseInt(prompt("Digite a idade de " + nomes[0] + ": "))
+
+        let menor = idade[0]
+        let nomemenor = nomes [0]
+        //Aqui ele coloca essas variaveis com os valores inseridos na caixa 0 do vetor
+
+        for (let i=1; i<10;i++){
+            nomes [i]=prompt("Informe o " + (i+1) +"º nome")
+            idade[i]=parseInt(prompt("Digite a " + (i+1) + "º idade: "))
+
+            if(idade[i]< menor){
+                menor = idade[i] 
+                nomemenor = nomes[i]
+            }
+        }
+
+        document.write("A pessoa mais nova é " + nomemenor + " com " + menor + " anos.")
+    </script>
+</body>
+</html>

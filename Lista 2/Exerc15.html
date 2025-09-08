@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 15</title>
+</head>
+<body>
+    <h1>Exercício 15</h1>
+    <p>Escreva um programa que leia a idade de 20 pessoas e exiba a soma das idades. </p>
+
+    <script>
+        let idades = new Array(20) //cria um vetor vazio
+        let soma = 0
+
+        for (let i=1; i <= 20; i++){
+            idades[i]=parseInt(prompt("Digite a " + (i) + "º idade: "))
+
+            soma += idades[i]
+        }
+
+        document.write("As idades dessas vinte pessoas são: " + idades + "<br>")
+        document.write ("A soma dos idades é igual a: " + soma)
+    </script>
+</body>
+</html>
