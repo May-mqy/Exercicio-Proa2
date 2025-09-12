@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 22</title>
+    <title>Exercício 13</title>
 </head>
 <body>
-    <h1>Exercício 22</h1>
-    <p>Faça um programa que leia 20 números e, ao final, escreva quantos estão entre 0 e 100. </p>
+    <h1>Exercício 13 da Lista 3</h1>
+    <p>Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e 100.     </p>
 
     <script>
-        let num = new Array (20)
+        let numeros = new Array (20)
         let contador = 0
         
         for(let i=0; i<20;i++){
-            num[i]=parseInt(prompt("Digite a " + (i+1) + "º idade: "))
-            if(num[i]>=0 && num[i]<101){
+            numeros[i]=parseInt(prompt("Digite a " + (i+1) + "º idade: "))
+            if(numeros[i]>=0 && numeros[i]<101){
                 contador ++
             }
         }

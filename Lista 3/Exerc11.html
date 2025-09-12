@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <h1>Exercício 11 da Lista 3</h1>
+    <p>Escreva um algoritmo que leia 20 números do usuário e exiba quantos números são maiores do que 8.     </p>
+
+    <script>
+       let numeros = new Array(20) 
+        let contador = 0
+
+        for (let i=0; i <numeros.length; i++){
+            numeros[i]=parseInt(prompt("Digite o " + (i+1) + "º número: "))
+            
+            if (numeros[i]>8){
+                contador ++
+            }
+            
+        }
+
+        document.write( contador +" números são maiores que 8"+ "<br>")
+
+    </script>
+</body>
+</html>
