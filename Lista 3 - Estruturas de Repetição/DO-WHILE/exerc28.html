@@ -10,7 +10,15 @@
     <p>Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "do-while".</p>
 
     <script>
-       
+        let numero = prompt("Digite um número inteiro:");
+        let i = 0;
+
+        document.write("Dígitos de " + numero + ":<br>");
+
+        do {
+            document.write(numero.charAt(i) + "<br>");
+            i++;
+        } while (i < numero.length);
     </script>
 </body>
 </html>

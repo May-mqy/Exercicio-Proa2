@@ -10,7 +10,19 @@
     <p>Faça um programa que leia 5 números inteiros usando o loop "do-while" e exiba a média aritmética dos valores lidos.</p>
 
     <script>
-       
+        let ler = 0;
+        let soma = 0;
+        let num;
+    
+        do {
+                num = parseInt(prompt("Digite um número inteiro:"));
+                soma += num;
+                ler++;
+        } while (ler < 5);
+    
+        let media = soma / 5;
+        document.write("A média aritmética dos valores lidos é: " + media);
+        
     </script>
 </body>
 </html>

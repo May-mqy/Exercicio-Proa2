@@ -10,7 +10,28 @@
     <p>Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "do-while".</p>
 
     <script>
-       
+        let numero = parseInt(prompt("Digite um número inteiro: "));
+
+        if (numero <= 1) {
+            document.write(numero + " não é primo.");
+        } else {
+            let i = 2;
+            let primo = true;
+
+            do {
+                if (i !== numero && numero % i === 0) { // ignora o próprio número
+                    primo = false;
+                    break;
+                }
+                i++;
+            } while (i <= numero);
+
+            if (primo) {
+                document.write(numero + " é primo.");
+            } else {
+                document.write(numero + " não é primo.");
+            }
+        }
     </script>
 </body>
 </html>

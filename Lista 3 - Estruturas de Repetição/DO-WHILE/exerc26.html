@@ -10,7 +10,18 @@
     <p>Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número lido usando o loop "do-while".</p>
 
     <script>
-       
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+        let i = 2;
+        let soma = 0;
+
+        do {
+            if (i % 2 === 0) {
+                soma += i;
+            }
+            i++;
+        } while (i <= numero);
+
+        document.write("A soma dos números pares entre 1 e " + numero + " é: " + soma);
     </script>
 </body>
 </html>
